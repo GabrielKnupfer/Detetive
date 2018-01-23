@@ -15,7 +15,6 @@ namespace Detetive.Infrastructure.Mappings
 
             builder.Property(x => x.Nome)
                 .HasColumnName("Nome")
-                .IsRequired()
                 .HasMaxLength(300);
         }
     }

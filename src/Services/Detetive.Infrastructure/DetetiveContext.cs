@@ -13,6 +13,10 @@ namespace Detetive.Infrastructure
         {
         }
 
+        public DbSet<Arma> Armas { get; set; }
+        public DbSet<Local> Locais { get; set; }
+        public DbSet<Suspeito> Suspeitos { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -21,9 +25,5 @@ namespace Detetive.Infrastructure
             modelBuilder.ApplyConfiguration(new LocalMap());
             modelBuilder.ApplyConfiguration(new SuspeitoMap());
         }
-
-        public DbSet<Arma> Armas { get; set; }
-        public DbSet<Local> Locais { get; set; }
-        public DbSet<Suspeito> Suspeitos { get; set; }
     }
 }

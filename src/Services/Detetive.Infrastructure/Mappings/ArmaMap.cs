@@ -15,7 +15,6 @@ namespace Detetive.Infrastructure.Mappings
 
             builder.Property(x => x.Nome)
                 .HasColumnName("Nome")
-                .IsRequired()
                 .HasMaxLength(300);
         }
         //http://www.entityframeworktutorial.net/code-first/move-configurations-to-seperate-class-in-code-first.aspx

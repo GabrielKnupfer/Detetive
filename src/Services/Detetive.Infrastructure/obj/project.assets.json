@@ -2961,9 +2961,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj",
       "projectName": "Detetive.Infrastructure",
@@ -3003,6 +3000,12 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "2.0.1"
@@ -3010,12 +3013,6 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "2.0.1"
-          },
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
           }
         },
         "imports": [

@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Detetive.Domain\Detetive.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
