@@ -12543,11 +12543,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Web Apps\\Detetive.WebMVC\\Detetive.WebMVC.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Web Apps\\Detetive.WebMVC\\Detetive.WebMVC.csproj",
       "projectName": "Detetive.WebMVC",
-      "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Web Apps\\Detetive.WebMVC\\Detetive.WebMVC.csproj",
+      "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Web Apps\\Detetive.WebMVC\\Detetive.WebMVC.csproj",
       "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Web Apps\\Detetive.WebMVC\\obj\\",
+      "outputPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Web Apps\\Detetive.WebMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

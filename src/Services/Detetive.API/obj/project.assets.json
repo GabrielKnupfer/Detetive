@@ -4746,6 +4746,44 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Detetive.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Detetive.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Detetive.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Detetive.Application.dll": {}
+        }
+      },
+      "Detetive.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Detetive.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Detetive.Domain.dll": {}
+        }
+      },
+      "Detetive.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Detetive.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Detetive.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Detetive.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -12525,11 +12563,30 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Detetive.Application/1.0.0": {
+      "type": "project",
+      "path": "../Detetive.Application/Detetive.Application.csproj",
+      "msbuildProject": "../Detetive.Application/Detetive.Application.csproj"
+    },
+    "Detetive.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Detetive.Domain/Detetive.Domain.csproj",
+      "msbuildProject": "../Detetive.Domain/Detetive.Domain.csproj"
+    },
+    "Detetive.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Detetive.Infrastructure/Detetive.Infrastructure.csproj",
+      "msbuildProject": "../Detetive.Infrastructure/Detetive.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Detetive.Application >= 1.0.0",
+      "Detetive.Domain >= 1.0.0",
+      "Detetive.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
+      "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -12543,11 +12600,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Services\\Detetive.API\\Detetive.API.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.API\\Detetive.API.csproj",
       "projectName": "Detetive.API",
-      "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Services\\Detetive.API\\Detetive.API.csproj",
+      "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.API\\Detetive.API.csproj",
       "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Services\\Detetive.API\\obj\\",
+      "outputPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12565,7 +12622,17 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj"
+            },
+            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Domain\\Detetive.Domain.csproj": {
+              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Domain\\Detetive.Domain.csproj"
+            },
+            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj": {
+              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -12577,6 +12644,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0",

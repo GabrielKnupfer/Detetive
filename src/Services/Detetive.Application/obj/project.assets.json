@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Detetive.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Detetive.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Detetive.Domain.dll": {}
+        }
       }
     }
   },
@@ -656,10 +666,16 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Detetive.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Detetive.Domain/Detetive.Domain.csproj",
+      "msbuildProject": "../Detetive.Domain/Detetive.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Detetive.Domain >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -673,11 +689,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj",
       "projectName": "Detetive.Application",
-      "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj",
+      "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj",
       "packagesPath": "C:\\Users\\gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Projects\\Detetive\\src\\Services\\Detetive.Application\\obj\\",
+      "outputPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -695,7 +711,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Domain\\Detetive.Domain.csproj": {
+              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Domain\\Detetive.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

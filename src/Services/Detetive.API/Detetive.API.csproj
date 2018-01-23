@@ -10,10 +10,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Detetive.Application\Detetive.Application.csproj" />
+    <ProjectReference Include="..\Detetive.Domain\Detetive.Domain.csproj" />
+    <ProjectReference Include="..\Detetive.Infrastructure\Detetive.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

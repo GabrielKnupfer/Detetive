@@ -1,0 +1,13 @@
+{
+  "User": {
+    "Id": 1870204,
+    "Username": "GabrielKnupfer",
+    "Name": "Gabriel Knupfer",
+    "Email": "knupfergabriel@gmail.com",
+    "AvatarUrl": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/1870204/avatar.png",
+    "PrivateToken": "e130521a44226dff4ca0e0929d41097abe724a2ffd882ece95035eb83c0cc0f5",
+    "Host": "https://gitlab.com",
+    "TwoFactorEnabled": false,
+    "ApiVersion": 3
+  }
+}
