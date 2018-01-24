@@ -15578,9 +15578,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.API\\Detetive.API.csproj",
       "projectName": "Detetive.API",
@@ -15605,14 +15602,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj"
+            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj": {
+              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj"
             },
             "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Domain\\Detetive.Domain.csproj": {
               "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Domain\\Detetive.Domain.csproj"
             },
-            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj": {
-              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj"
+            "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Infrastructure\\Detetive.Infrastructure.csproj"
             }
           }
         }
@@ -15626,7 +15623,24 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.5"
+          },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "2.0.1"
           },
@@ -15637,23 +15651,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "2.0.2"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.5"
           }
         },
         "imports": [

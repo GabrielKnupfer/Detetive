@@ -4,7 +4,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Detetive.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-
+using Detetive.Application.Interfaces;
+using Detetive.Application.Implementations;
+using Detetive.Domain.Repositories;
+using Detetive.Infrastructure.Repositories;
+using System.Reflection;
 
 namespace Detetive.API
 {
@@ -19,10 +23,20 @@ namespace Detetive.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DetetiveContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<DetetiveContext>(options => options.UseSqlServer(sqlConnectionString, sqlOptions =>
+            {
+                sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+            }));
 
             services.AddMvc();
+
+            services.AddScoped<IArmaAppService, ArmaAppService>();
+            services.AddScoped<IArmaRepository, ArmaRepository>();
+            services.AddScoped<ILocalAppService, LocalAppService>();
+            services.AddScoped<ILocalRepository, LocalRepository>();
+            services.AddScoped<ISuspeitoAppService, SuspeitoAppService>();
+            services.AddScoped<ISuspeitoRepository, SuspeitoRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

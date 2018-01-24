@@ -685,9 +685,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\gabriel\\Documents\\Visual Studio 2017\\Detetive\\src\\Services\\Detetive.Application\\Detetive.Application.csproj",
       "projectName": "Detetive.Application",
