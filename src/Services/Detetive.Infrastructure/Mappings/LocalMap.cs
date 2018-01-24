@@ -10,8 +10,7 @@ namespace Detetive.Infrastructure.Mappings
         {
             builder.ToTable("Locais", DetetiveContext.DEFAULT_SCHEMA);
 
-            builder.Property(x => x.Id)
-                .HasColumnName("Id");
+            builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Nome)
                 .HasColumnName("Nome")
